@@ -1,0 +1,108 @@
+.home-wrap header {
+  align-items: center;
+  box-shadow: 0 1px 5px 0 $shadow-bottom;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 15px 10%;
+
+  @media only screen
+    and (min-width : 320px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @media only screen
+    and (min-width : 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+.header-logo {
+  display: flex;
+  margin-right: auto;
+  padding: 0;
+
+  @media only screen
+    and (min-width : 320px) {
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  @media only screen
+    and (min-width : 768px) {
+    display: flex;
+    margin-left: 0;
+  }
+}
+
+.logo {
+  color: $logo-color;
+  font-size: 1.1111111111111112em; // 20px
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $header-hover;
+  }
+}
+
+.social {
+  align-items: center;
+  display: flex;
+  font-size: 1em;
+  justify-content: flex-end;
+  margin: 0;
+
+  .nav-social {
+    fill: $social-color;
+    height: 20px;
+    padding: 0 15px;
+    stroke: none;
+    stroke-width: 1;
+    width: 20px;
+
+    }
+
+  @media only screen
+    and (min-width : 320px) {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  @media only screen
+    and (min-width : 768px) {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0;
+  }
+}
+
+
+.nav-social-idle {fill: $social-color; } // inactive state color
+
+svg:hover .email {
+  fill: $email-color;
+}
+
+svg:hover .dribbble {
+  fill: $dribbble-color;
+}
+
+svg:hover .instagram {
+  fill: $instagram-color;
+}
+
+svg:hover .twitter {
+  fill: $twitter-color;
+}
+
+svg:hover .linkedin {
+  fill: $linkedin-color;
+}

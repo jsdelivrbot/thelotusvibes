@@ -1,0 +1,65 @@
+// Typography
+
+h1 {
+  color: $body-text;
+  font-size: 1.6666666666666667em; // 30px
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+h2 {
+  color: $body-text;
+  font-size: 2.2222222222222223em; // 40px
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 0 0 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: $logo-color;
+  font-size: 1.389em; // 25px
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a,
+p {
+  font-size: $base-font-size;
+  font-style: normal;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+
+// Selection colors
+
+// Basic Styles
+
+html,
+body {
+  background: $bg-color;
+  margin: 0 auto;
+  max-width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  color: $body-text;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  min-width: 100vw;
+  text-decoration: none;
+  width: 100%;
+}

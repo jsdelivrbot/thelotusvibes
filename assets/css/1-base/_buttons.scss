@@ -1,0 +1,24 @@
+// * General button style (reset) * //
+.btn {
+  background: none;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  display: flex;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  justify-content: center;
+  letter-spacing: 1px;
+  outline: none;
+  position: relative;
+  text-transform: uppercase;
+  transition: all .3s;
+}
+
+.btn:after {
+  content: '';
+  position: absolute;
+  transition: all .3s;
+  z-index: -1;
+}

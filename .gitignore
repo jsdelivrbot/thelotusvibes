@@ -37,6 +37,15 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+### CodeKit ###
+# General CodeKit files to ignore
+config.codekit
+/min
+
+### CodeKit Patch ###
+*/codekit-config.json
+.codekit-cache
+
 ### OSX ###
 
 # Icon must end with two \r
