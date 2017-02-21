@@ -60,4 +60,8 @@ config.codekit
 ### Sass ###
 *.css.map
 
-# End of https://www.gitignore.io/api/macos,osx,git,sass,jekyll
+.bundle
+Gemfile
+Gemfile.lock
+node_modules
+package.json
