@@ -63,7 +63,13 @@ body {
 
   @media only screen
     and (min-width : 768px) {
-    font-size: 1.333em;
+    font-size: 1.333em; // 24px
+    padding: 15px 0 0;
+  }
+
+  @media only screen
+    and (min-width : 2304px) {
+    font-size: 2.222em; // 40px
     padding: 15px 0 0;
   }
 }
