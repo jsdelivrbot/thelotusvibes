@@ -20,22 +20,11 @@ h2 {
   text-transform: uppercase;
 }
 
-h3 {
-  color: $logo-color;
-  font-size: 1.389em; // 25px
-  font-weight: 700;
-  letter-spacing: 2px;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
 a,
 p {
   font-size: $base-font-size;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   margin: 0;
   padding: 0;
   text-decoration: none;

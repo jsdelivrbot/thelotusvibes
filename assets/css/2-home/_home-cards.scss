@@ -1,4 +1,4 @@
-.section-about {
+.section-cards {
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -65,4 +65,13 @@
     and (min-width : 2880px) {
     font-size: 2.5em;
   }
+}
+
+
+svg:hover .instagram {
+  fill: $accent;
+}
+
+svg:hover .facebook {
+  fill: $accent;
 }
