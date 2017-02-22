@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0;
 
   @media only screen
     and (min-width : 320px) {
@@ -21,28 +20,9 @@
   }
 }
 
-.logo {
-  display: flex;
-  margin-right: auto;
-
-  @media only screen
-    and (min-width : 320px) {
-    display: block;
-    justify-content: center;
-    margin: 0 auto;
-    width: 40%;
-  }
-
-  @media only screen
-    and (min-width : 768px) {
-    display: flex;
-    width: 15%;
-  }
-}
-
 #gradient {
   width: 100%;
-  padding: 4% 0;
+  padding: 4% 0 0;
   position: relative;
   background: linear-gradient(270deg, #003366, #b27000, #06617d, #067370);
   background-size: 800% 800%;
@@ -65,4 +45,36 @@
   0%{background-position:0% 50%}
   50%{background-position:100% 50%}
   100%{background-position:0% 50%}
+}
+
+.logo {
+  display: flex;
+  margin-right: auto;
+
+  @media only screen
+    and (min-width : 320px) {
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    width: 40%;
+  }
+
+  @media only screen
+    and (min-width : 768px) {
+    display: flex;
+    width: 15%;
+  }
+}
+
+.main-description { //spacing layout
+
+  @media only screen
+    and (min-width : 320px) {
+    padding: 4% 8%;
+  }
+
+  @media only screen
+    and (min-width : 768px) {
+    padding: 3% 30%;
+  }
 }
