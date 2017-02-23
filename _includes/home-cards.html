@@ -1,6 +1,52 @@
 <section class="section-cards">
-  <div class="flex-grid">
-    <h1 class="intro">Introduction here.
-    </h1>
+  <div>
+    <h2 class="light-display-accent">Follow @thelotusvibes for updates!</h2>
+      <div class="social-row">
+        <iframe class="social-btn" src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffacebook.com%2Fthelotusvibes&width=63&layout=button&action=like&size=large&show_faces=false&share=false&height=65&appId" width="63" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        <iframe class="social-btn" src="https://www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Fthelotusvibes&width=78&height=65&layout=button&size=large&show_faces=false&appId" width="78" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        <iframe class="social-btn" src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Ffacebook.com%2Fthelotusvibes&layout=button&size=large&mobile_iframe=true&width=73&height=28&appId" width="73" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+      </div>
   </div>
+
+    <!-- Bottom bar with filter -->
+  <div class="bar">
+      <div class="filter">
+          <span class="filter__label">Filter: </span>
+          <button class="action filter__item filter-item--selected" data-filter="*">All</button>
+          <button class="action filter__item" data-filter=".static">Static
+          </button>
+          <button class="action filter__item" data-filter=".animated">Animated
+          </button>
+          <button class="action filter__item" data-filter=".downloadable-content">Downloadable Content
+          </button>
+      </div>
+  </div>
+  <!-- Main view -->
+  <div class="view">
+      <!-- Grid -->
+      <section class="grid">
+          <!-- Grid sizer for a fluid Isotope (Masonry) layout -->
+          <div class="grid__sizer"></div>
+          <!-- Grid items -->
+          <div class="grid__item shirts">
+              <div class="slider">
+                  <div class="slider__item"><img src="images/product1/1.png" alt="product1_1" /></div>
+              </div>
+          </div>
+          <div class="grid__item grid__item--size-a jackets">
+              <!-- ... -->
+          </div>
+          <div class="grid__item shoes">
+              <!-- ... -->
+          </div>
+          <div class="grid__item dresses">
+              <!-- ... -->
+          </div>
+          <div class="grid__item trousers">
+              <!-- ... -->
+          </div>
+      </section>
+      <!-- /grid-->
+  </div>
+
 </section>

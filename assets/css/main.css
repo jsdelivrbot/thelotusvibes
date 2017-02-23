@@ -4,7 +4,7 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -368,13 +368,13 @@ h1 {
 
 h2 {
   color: #5b5b5b;
-  font-size: 2.2222222222222223em;
-  font-weight: 700;
-  letter-spacing: 2px;
+  font-size: 2em;
+  font-weight: 300;
+  letter-spacing: 0.4px;
   margin: 0;
   padding: 0 0 10px;
   text-decoration: none;
-  text-transform: uppercase; }
+  text-transform: none; }
 
 a,
 p {
@@ -400,6 +400,22 @@ body {
   min-width: 100vw;
   text-decoration: none;
   width: 100%; }
+
+.light-display-accent {
+  color: #a7383d;
+  text-align: center; }
+  @media only screen and (min-width: 320px) {
+    .light-display-accent {
+      font-size: 1em;
+      padding: 8px 0 0; } }
+  @media only screen and (min-width: 768px) {
+    .light-display-accent {
+      font-size: 2em;
+      padding: 15px 0 0; } }
+  @media only screen and (min-width: 2304px) {
+    .light-display-accent {
+      font-size: 2.222em;
+      padding: 15px 0 0; } }
 
 .dark-headline2 {
   color: #fff; }
@@ -539,64 +555,142 @@ header {
   justify-content: center; }
   @media only screen and (min-width: 320px) {
     .section-cards {
-      margin: 60px 20px 50px;
+      margin: 30px 20px 0;
       width: auto; } }
   @media only screen and (min-width: 768px) {
     .section-cards {
-      margin: 60px 0 50px;
-      width: 70%; } }
-  @media only screen and (min-width: 768px) {
-    .section-cards {
-      margin: 90px 0 70px;
-      width: 60%; } }
-  @media only screen and (min-width: 1200px) {
-    .section-cards {
-      width: 50%; } }
-  @media only screen and (min-width: 1600px) {
-    .section-cards {
-      width: 50%; } }
-  @media only screen and (min-width: 2304px) {
-    .section-cards {
-      margin: 180px 0 150px;
-      width: 40%; } }
-  @media only screen and (min-width: 2880px) {
-    .section-cards {
-      margin: 200px 0 170px;
-      width: 50%; } }
+      margin: 60px 0 0; } }
 
-.intro {
-  color: #5b5b5b;
+.social-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2em; }
+
+.social-btn {
+  padding: 0 5px; }
+
+/* Product grid */
+.grid {
+  position: relative;
+  overflow: hidden;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 1.5em 0 8em;
   text-align: center; }
-  @media only screen and (min-width: 320px) {
-    .intro {
-      font-size: 1.2em; } }
-  @media only screen and (min-width: 1600px) {
-    .intro {
-      font-size: 1.5em; } }
-  @media only screen and (min-width: 2880px) {
-    .intro {
-      font-size: 2.5em; } }
 
-svg:hover .instagram {
-  fill: #a7383d; }
+/* Clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both; }
 
-svg:hover .facebook {
-  fill: #a7383d; }
-
-.section-footer {
-  background-color: #fff;
-  padding: 8em 0 4em; }
-
-.footer {
-  align-items: center;
+/* Fixed bottom bar */
+.bar {
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  padding: 1em 0;
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background: #022636;
+  -webkit-transform: translate3d(0, 0, 0);
+  /* Fix for Chrome flicker on Mac ...party like we're in 2012! */ }
 
-.btn-contact {
-  color: #5b5b5b;
-  margin-bottom: 8em;
-  margin-top: 1.6666666666666667em; }
+/* Filter */
+.filter__label {
+  font-size: .85em;
+  display: inline-block;
+  margin: 0 2%;
+  font-weight: bold;
+  color: #393A3F; }
 
-.btn-contact:hover {
-  opacity: .5; }
+.filter__item {
+  background-color: transparent;
+  border-bottom: 2px solid transparent;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0 2%;
+  padding: .1em;
+  vertical-align: middle;
+  color: #a3a3b3; }
+
+.filter-item--selected {
+  border-color: #fba7ab;
+  color: #fba7ab; }
+
+/* Action style */
+.action {
+  font-family: Open Sans, sans-serif;
+  font-size: 1em;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0.25em 1em;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  background: none; }
+
+.action:focus {
+  outline: none; }
+
+.action--button {
+  color: #5c5edc; }
+
+.no-touch .action--button:hover {
+  color: #fff;
+  outline: none; }
+
+.text-hidden {
+  position: absolute;
+  top: 200%; }
+
+/* Resize grid items on smaller screens */
+@media screen and (max-width: 65em) {
+  .grid__sizer,
+  .grid__item,
+  .grid__item--size-a {
+    width: 33.333%; } }
+
+@media screen and (max-width: 50em) {
+  .grid__sizer,
+  .grid__item,
+  .grid__item--size-a {
+    width: 50%; }
+  .bar {
+    padding-left: 0;
+    text-align: left; } }
+
+@media screen and (max-width: 40em) {
+  .bar {
+    padding: .5em 4.5em .5em 0; }
+  .flexbox .filter {
+    justify-content: space-around; }
+  .filter__item {
+    height: 100%;
+    padding: .5em .1em;
+    border: none; }
+  .filter__item {
+    display: inline-block; }
+  .filter__label,
+  .action__text {
+    display: none; } }
+
+@media screen and (max-width: 25em) {
+  .grid {
+    max-width: 75%; }
+  .grid__loader {
+    margin: 0 auto; }
+  .grid__sizer,
+  .grid__item,
+  .grid__item--size-a {
+    width: 100%; }
+  .action--buy {
+    font-size: 1.5em;
+    padding: 1.15em 1.5em;
+    -webkit-tap-highlight-color: transparent; } }

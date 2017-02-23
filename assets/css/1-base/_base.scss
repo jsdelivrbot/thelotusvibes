@@ -11,13 +11,13 @@ h1 {
 
 h2 {
   color: $body-text;
-  font-size: 2.2222222222222223em; // 40px
-  font-weight: 700;
-  letter-spacing: 2px;
+  font-size: 2em; // 36px
+  font-weight: 300;
+  letter-spacing: 0.4px;
   margin: 0;
   padding: 0 0 10px;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 a,
@@ -51,6 +51,29 @@ body {
 }
 
 // Specific Typography
+
+.light-display-accent {
+  color: $accent;
+  text-align: center;
+
+  @media only screen
+    and (min-width : 320px) {
+    font-size: 1em;
+    padding: 8px 0 0;
+  }
+
+  @media only screen
+    and (min-width : 768px) {
+    font-size: 2em; // 36px
+    padding: 15px 0 0;
+  }
+
+  @media only screen
+    and (min-width : 2304px) {
+    font-size: 2.222em; // 40px
+    padding: 15px 0 0;
+  }
+}
 
 .dark-headline2 {
   color: $dark-headline2;
