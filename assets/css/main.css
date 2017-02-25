@@ -565,10 +565,10 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 2em; }
+  margin: 1em 0 2em 0; }
 
-.social-btn {
-  padding: 0 5px; }
+.fb-like {
+  transform: scale(1.2); }
 
 * {
   box-sizing: border-box; }
