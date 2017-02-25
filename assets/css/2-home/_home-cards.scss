@@ -127,7 +127,6 @@
 .element-item {
   float: left;
   padding: 10px;
-  background: #888;
   color: #262524;
 
   @media only screen
@@ -150,17 +149,11 @@
   padding: 0;
 }
 
-.element-item .name {
-  position: relative;
-
-  left: 10px;
-  top: 60px;
-  text-transform: none;
-  letter-spacing: 0;
-  font-size: 12px;
-  font-weight: normal;
-}
-
 .element-item.static  { background: #F00; background: hsl(   0, 100%, 50%); }
 .element-item.animated   { background: #F80; background: hsl(  36, 100%, 50%); }
 .element-item.download   { background: #FF0; background: hsl(  72, 100%, 50%); }
+
+#lotus {
+  background-image: url('/assets/img/static-lotus.svg');
+  background-color: white;
+}

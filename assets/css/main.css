@@ -651,7 +651,6 @@ header {
 .element-item {
   float: left;
   padding: 10px;
-  background: #888;
   color: #262524; }
   @media only screen and (min-width: 320px) {
     .element-item {
@@ -668,15 +667,6 @@ header {
   margin: 0;
   padding: 0; }
 
-.element-item .name {
-  position: relative;
-  left: 10px;
-  top: 60px;
-  text-transform: none;
-  letter-spacing: 0;
-  font-size: 12px;
-  font-weight: normal; }
-
 .element-item.static {
   background: #F00;
   background: red; }
@@ -688,3 +678,7 @@ header {
 .element-item.download {
   background: #FF0;
   background: #ccff00; }
+
+#lotus {
+  background-image: url("/assets/img/static-lotus.svg");
+  background-color: white; }
