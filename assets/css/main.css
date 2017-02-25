@@ -680,5 +680,4 @@ header {
   background: #ccff00; }
 
 #lotus {
-  background-image: url("../../assets/img/static-lotus.svg");
-  background-color: white; }
+  background: url("../../assets/img/static-lotus.svg") no-repeat white; }
