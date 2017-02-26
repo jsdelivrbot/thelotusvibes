@@ -640,6 +640,12 @@ header {
 .grid {
   background: grey;
   margin: 0 auto; }
+  @media only screen and (min-width: 320px) {
+    .grid {
+      margin-bottom: 20%; } }
+  @media only screen and (min-width: 768px) {
+    .grid {
+      margin: 0 auto; } }
 
 /* clear fix */
 .grid:after {
@@ -679,6 +685,10 @@ header {
   background: #FF0;
   background: #ccff00; }
 
+#monastery {
+  background: white url("https://drive.google.com/uc?export=download&id=0B8f8_Ahv6yeLTVRxNUthWDZQWFE") no-repeat center;
+  background-size: cover; }
+
 #lotus {
-  background: white url("../../assets/img/static-lotus.svg") no-repeat center 100%;
+  background: white url("https://drive.google.com/uc?export=download&id=0B8f8_Ahv6yeLZ2htME1GNXprWEk") no-repeat center;
   background-size: cover; }
