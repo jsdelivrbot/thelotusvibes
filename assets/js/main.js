@@ -5,7 +5,7 @@ var $grid = $('.grid').isotope({
   itemSelector: '.element-item',
   masonry: {
     columnWidth: 120,
-    isFitWidth: true,
+    isFitWidth: true
   }
 });
 // filter functions
