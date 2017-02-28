@@ -657,7 +657,9 @@ header {
 /* ---- .element-item ---- */
 .element-item {
   float: left;
-  color: #262524; }
+  color: #262524;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.24);
+  transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1); }
   @media only screen and (min-width: 320px) {
     .element-item {
       margin: 0 0 40px 0;
@@ -668,6 +670,9 @@ header {
       margin: 0 0 40px 20px;
       width: 440px;
       height: 500px; } }
+
+.element-item:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.1); }
 
 .element-item > * {
   margin: 0;
@@ -692,7 +697,7 @@ header {
   background: white url("https://cdn.rawgit.com/adachiu/thelotusvibes-docs/8f9f97b728d05a1b76b9300f98ad98f67b376de2/meditation.gif") no-repeat bottom; }
 
 #prayer-flags {
-  background: white url("https://cdn.rawgit.com/adachiu/thelotusvibes-docs/2342a33925f178cc13cc8e23e7d7da4bddfae6be/static-prayerflags%402x.jpg") no-repeat center;
+  background: white url("https://cdn.rawgit.com/adachiu/thelotusvibes-docs/c01a313a/static-prayerflags%402x.jpg") no-repeat center;
   background-size: cover; }
 
 #monastery {
@@ -700,5 +705,5 @@ header {
   background-size: cover; }
 
 #lotus {
-  background: white url("https://cdn.rawgit.com/adachiu/thelotusvibes-docs/6c3c5717bc5b102df435769b1c4044289e194905/static-lotus.svg") no-repeat center;
+  background: white url("https://cdn.rawgit.com/adachiu/thelotusvibes-docs/f05977d3937ddcd59c1ac68e46532917ddc30ae3/static-lotus.svg") no-repeat center;
   background-size: cover; }
