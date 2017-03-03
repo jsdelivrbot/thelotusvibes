@@ -690,6 +690,9 @@ header {
   background: #FF0;
   background: #ccff00; }
 
+#clouds {
+  background: white url("https://cdn.rawgit.com/adachiu/thelotusvibes-docs/62999ce417b19e4f9cb68bb73035c52d1e67455d/clouds.gif") no-repeat bottom; }
+
 #prayer-wheel {
   background: white url("https://cdn.rawgit.com/adachiu/thelotusvibes-docs/7a001b7c27c622beb90cb33fca730f98cc6db48a/prayerwheel.gif") no-repeat right bottom; }
 
