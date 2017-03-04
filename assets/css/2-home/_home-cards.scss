@@ -30,169 +30,39 @@
 
 * { box-sizing: border-box; }
 
-/* ---- button ---- */
+// Instafeed
 
-.button {
-  display: inline-block;
-  padding-left: 2em;
-  margin: 0;
-  background: none;
-  border: none;
-  outline: none;
-  color: $btn-filter;
-  font-family: Open sans, sans-serif;
-  font-size: 0.889em; // 16px
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 0.2px;
-  font-style: normal;
-  font-weight: bold;
-  cursor: pointer;
+.wrap {
+
+  @media only screen
+    and (min-width : 768px) {
+    max-width:1280px;
+    margin:20px auto;
+  }
 }
 
-.button:hover {
-  background-color: none;
-  color: pink;
-}
-
-.button:active,
-.button.is-checked {
-  color: pink;
-  background-color: transparent;
-}
-
-.button.is-checked {
-  color: pink;
-}
-
-.button:active {
-  color: pink;
-}
-
-/* ---- button-group ---- */
-
-.button-group {
-  background-color: $filter-bar;
+#instafeed {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  padding: 1em 0;
-	position: fixed;
-	z-index: 100;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	text-align: center;
+  width: 100%;
 }
 
-.hide {
+img {
+
   @media only screen
     and (min-width : 320px) {
-    display: none;
+    display:block;
+    width: auto;
+    height: 300px;
+    margin: 10px;
   }
 
   @media only screen
     and (min-width : 768px) {
-    display: block;;
-  }
-}
-
-.filter-label {
-  color: $btn-filter;
-  font-size: 0.722em; // 13px
-  padding: 0;
-
-  @media only screen
-    and (min-width : 768px) {
-    padding-right: 1em;
-  }
-}
-
-/* ---- isotope ---- */
-
-.grid {
-  background: transparent;
-  margin: 0 auto;
-
-  @media only screen
-    and (min-width : 320px) {
-    margin-bottom: 15%;
-  }
-
-  @media only screen
-    and (min-width : 768px) {
-    margin: 0 auto;
-  }
-}
-
-/* clear fix */
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-/* ---- .element-item ---- */
-
-.element-item {
-  float: left;
-  color: #262524;
-
-  box-shadow: 0 1px 3px rgba(0,0,0,0.24);
-
-  @media only screen
-    and (min-width : 320px) {
-    margin: 0 0 40px 0;
-    width: 100%;
+    display:block;
+    width: 400px;
     height: 400px;
+    margin: 10px;
   }
-
-  @media only screen
-    and (min-width : 768px) {
-    margin: 0 0 40px 20px;
-    width: 440px;
-    height: 500px;
-  }
-}
-
-.element-item:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.10), 0 10px 10px rgba(0,0,0,0.10);
-  transition: all .6s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-.element-item > * {
-  margin: 0;
-  padding: 0;
-}
-
-.element-item.static  { background: #F00; background: hsl(   0, 100%, 50%); }
-.element-item.animated   { background: #F80; background: hsl(  36, 100%, 50%); }
-.element-item.download   { background: #FF0; background: hsl(  72, 100%, 50%); }
-
-#clouds {
-  background: white url('https://cdn.rawgit.com/adachiu/thelotusvibes-docs/62999ce417b19e4f9cb68bb73035c52d1e67455d/clouds.gif') no-repeat bottom;
-}
-
-#prayer-wheel {
-  background: white url('https://cdn.rawgit.com/adachiu/thelotusvibes-docs/7a001b7c27c622beb90cb33fca730f98cc6db48a/prayerwheel.gif') no-repeat right bottom;
-}
-
-#meditation {
-  background: white url('https://cdn.rawgit.com/adachiu/thelotusvibes-docs/8f9f97b728d05a1b76b9300f98ad98f67b376de2/meditation.gif') no-repeat bottom;
-}
-
-#prayer-flags {
-  background: white url('https://cdn.rawgit.com/adachiu/thelotusvibes-docs/c01a313a/static-prayerflags%402x.jpg') no-repeat center;
-  background-size: cover;
-}
-
-#monastery {
-  background: white url('https://cdn.rawgit.com/adachiu/thelotusvibes-docs/6c3c5717bc5b102df435769b1c4044289e194905/static-monastery.svg') no-repeat center;
-  background-size: cover;
-}
-
-#lotus {
-  background: white url('https://cdn.rawgit.com/adachiu/thelotusvibes-docs/f05977d3937ddcd59c1ac68e46532917ddc30ae3/static-lotus.svg') no-repeat center;
-  background-size: cover;
 }

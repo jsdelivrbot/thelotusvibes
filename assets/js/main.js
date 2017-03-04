@@ -1,29 +1,15 @@
-// external js: isotope.pkgd.js
+$(document).ready(function(){
 
-// init Isotope
-var $grid = $('.grid').isotope({
-  itemSelector: '.element-item',
-  masonry: {
-    columnWidth: 120,
-    isFitWidth: true
-  }
-});
-// filter functions
-var filterFns = {
 
-};
-// bind filter button click
-$('.filters-button-group').on( 'click', 'button', function() {
-  var filterValue = $( this ).attr('data-filter');
-  // use filterFn if matches value
-  filterValue = filterFns[ filterValue ] || filterValue;
-  $grid.isotope({ filter: filterValue });
+var userFeed = new Instafeed({
+    get: 'user',
+    userId: '4078788353',
+    accessToken: '4078788353.1677ed0.4112454355f04fcf88f3db2939f3cf27',
+    resolution: 'standard_resolution',
+    limit: 6,
+    template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>',
 });
-// change is-checked class on buttons
-$('.button-group').each( function( i, buttonGroup ) {
-  var $buttonGroup = $( buttonGroup );
-  $buttonGroup.on( 'click', 'button', function() {
-    $buttonGroup.find('.is-checked').removeClass('is-checked');
-    $( this ).addClass('is-checked');
-  });
+
+userFeed.run();
+
 });
