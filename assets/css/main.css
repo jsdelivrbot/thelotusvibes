@@ -643,8 +643,13 @@ header {
     .copyright {
       font-size: 1em; } }
 
-.fa {
-  padding-right: 0.500em; }
+@media only screen and (min-width: 320px) {
+  .fa {
+    padding: 0 0.750em; } }
+
+@media only screen and (min-width: 768px) {
+  .fa {
+    padding: 0 0.313em; } }
 
 .fa-heart {
   padding: 0 5px; }
