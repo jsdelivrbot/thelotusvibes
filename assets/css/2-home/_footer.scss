@@ -33,6 +33,12 @@
 .logo-lotus {
   width: 50px;
   height: auto;
+  margin-right: 0;
+
+  @media only screen
+    and (min-width : 1024px) {
+    margin-right: 100px;
+  }
 }
 
 .copyright {
