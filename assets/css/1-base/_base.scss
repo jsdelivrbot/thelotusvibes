@@ -1,7 +1,7 @@
 // Typography
 
 h1 {
-  color: $body-text;
+  color: $body-primary;
   font-size: 1.6666666666666667em; // 30px
   font-weight: 700;
   margin: 0;
@@ -10,7 +10,7 @@ h1 {
 }
 
 h2 {
-  color: $body-text;
+  color: $body-primary;
   font-size: 2em; // 36px
   font-weight: 300;
   letter-spacing: 0.4px;
@@ -41,7 +41,7 @@ body {
 }
 
 body {
-  color: $body-text;
+  color: $body-primary;
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   line-height: 1.6;

@@ -1,0 +1,61 @@
+.footer {
+  display: flex;
+  align-content: center;
+
+  @media only screen
+    and (min-width : 320px) {
+      align-items: center;
+      height: 100px;
+      margin: 10px auto;
+      justify-content: center;
+      flex-direction: column;
+  }
+
+  @media only screen
+    and (min-width : 768px) {
+    height: 100px;
+    margin: 0 100px;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  @media only screen
+    and (min-width : 1600px) {
+    margin: 0 220px;
+  }
+
+  @media only screen
+    and (min-width : 2304px) {
+    margin: 0 670px;
+  }
+}
+
+.logo-lotus {
+  width: 50px;
+  height: auto;
+}
+
+.copyright {
+  color: $body-disabled;
+  display: flex;
+  font-size: 0.722em;
+
+  @media only screen
+    and (min-width : 320px) {
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+  }
+
+  @media only screen
+    and (min-width : 768px) {
+    justify-content: flex-end;
+    padding: 0;
+  }
+
+  @media only screen
+    and (min-width : 2304px) {
+    font-size: 1em;
+  }
+}
