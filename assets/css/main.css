@@ -605,7 +605,7 @@ header {
     .footer {
       align-items: center;
       height: 100px;
-      margin: 10px auto;
+      margin: 1.875em auto;
       justify-content: center;
       flex-direction: column; } }
   @media only screen and (min-width: 768px) {
@@ -633,7 +633,7 @@ header {
     .copyright {
       align-items: center;
       justify-content: center;
-      padding: 10px;
+      padding: 1.250em;
       text-align: center; } }
   @media only screen and (min-width: 768px) {
     .copyright {
@@ -642,3 +642,30 @@ header {
   @media only screen and (min-width: 2304px) {
     .copyright {
       font-size: 1em; } }
+
+.fa {
+  padding-right: 0.278em; }
+
+.fa-heart {
+  padding: 0 5px; }
+
+.social {
+  color: #d4a26a; }
+  @media only screen and (min-width: 320px) {
+    .social {
+      padding-top: 0.556em; } }
+  @media only screen and (min-width: 768px) {
+    .social {
+      padding-top: 0; } }
+
+.fa-instagram:hover {
+  color: #4c68d7; }
+
+.fa-facebook:hover {
+  color: #4c68d7; }
+
+.fa-twitter:hover {
+  color: #00aced; }
+
+.fa-snapchat-ghost:hover {
+  color: #fffc00; }
