@@ -1,6 +1,7 @@
 .footer {
   display: flex;
   align-content: center;
+  align-items: center;
 
   @media only screen
     and (min-width : 320px) {
@@ -97,18 +98,47 @@
   }
 }
 
-.fa-instagram:hover {
-  color: $instagram;
+/* Icon Up */
+@-webkit-keyframes hvr-icon-up {
+  0%,
+	50%,
+	100% {
+    transform: translateY(0);
+  }
+  25%,
+	75% {
+    transform: translateY(-6px);
+  }
 }
-
-.fa-facebook:hover {
-  color: $instagram;
+@keyframes hvr-icon-up {
+  0%,
+	50%,
+	100% {
+    transform: translateY(0);
+  }
+  25%,
+	75% {
+    transform: translateY(-6px);
+  }
 }
-
-.fa-twitter:hover {
-  color: $twitter;
+/* Icon Up */
+.hvr-icon-up {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  padding: 0 1em; // 21px
 }
-
-.fa-snapchat-ghost:hover {
-  color: $snapchat;
+.hvr-icon-up:before {
+  position: absolute;
+  top: -10px;
+  left: 1px;
+  padding: 0 12px;
+  transform: translateZ(0);
+}
+.hvr-icon-up:hover:before, .hvr-icon-up:focus:before, .hvr-icon-up:active:before {
+  animation-name: hvr-icon-up;
+  animation-duration: 0.75s;
+  animation-timing-function: ease-out;
 }
