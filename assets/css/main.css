@@ -385,6 +385,15 @@ p {
   padding: 0;
   text-decoration: none; }
 
+ul, li {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px; }
+
+li {
+  float: left; }
+
 html,
 body {
   background: white;
@@ -454,6 +463,55 @@ body {
   transition: all .3s;
   z-index: -1; }
 
+nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  top: 0;
+  width: 100%;
+  height: auto; }
+
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  font-size: 0.722em;
+  text-align: center;
+  text-transform: uppercase; }
+  .nav a {
+    color: #d4a26a;
+    font-weight: 700;
+    width: auto; }
+  .nav li {
+    width: 100px;
+    background-color: transparent;
+    margin: 0 10px; }
+
+#logo-layout {
+  margin: 0 70px;
+  width: 160px; }
+
+.logo {
+  display: flex;
+  margin-right: auto;
+  height: auto; }
+  @media only screen and (min-width: 320px) {
+    .logo {
+      display: block;
+      justify-content: center;
+      margin: 0 auto;
+      width: 160px; } }
+  @media only screen and (min-width: 768px) {
+    .logo {
+      display: flex;
+      width: 20%; } }
+  @media only screen and (min-width: 1200px) {
+    .logo {
+      width: 15%; } }
+  @media only screen and (min-width: 1600px) {
+    .logo {
+      width: 160px; } }
+
 header {
   align-items: center;
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.3);
@@ -473,7 +531,6 @@ header {
 
 #gradient {
   width: 100%;
-  padding: 4% 0 0;
   position: relative;
   background: linear-gradient(270deg, #003366, #b27000, #06617d, #067370);
   background-size: 800% 800%;
@@ -504,26 +561,6 @@ header {
     background-position: 100% 50%; }
   100% {
     background-position: 0% 50%; } }
-
-.logo {
-  display: flex;
-  margin-right: auto; }
-  @media only screen and (min-width: 320px) {
-    .logo {
-      display: block;
-      justify-content: center;
-      margin: 0 auto;
-      width: 40%; } }
-  @media only screen and (min-width: 768px) {
-    .logo {
-      display: flex;
-      width: 20%; } }
-  @media only screen and (min-width: 1200px) {
-    .logo {
-      width: 15%; } }
-  @media only screen and (min-width: 1600px) {
-    .logo {
-      width: 10%; } }
 
 @media only screen and (min-width: 320px) {
   .main-description {

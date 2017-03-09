@@ -1,0 +1,64 @@
+nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  font-size: 0.722em; // 13px
+  text-align: center;
+  text-transform: uppercase;
+
+  a {
+    color: $cta;
+    font-weight: 700;
+    width: auto;
+  }
+
+  li {
+    width: 100px;
+    background-color: transparent;
+    margin: 0 10px;
+  }
+}
+
+#logo-layout {
+  margin: 0 70px;
+  width: 160px;
+}
+
+.logo {
+  display: flex;
+  margin-right: auto;
+  height: auto;
+
+  @media only screen
+    and (min-width : 320px) {
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    width: 160px;
+  }
+
+  @media only screen
+    and (min-width : 768px) {
+    display: flex;
+    width: 20%;
+  }
+
+  @media only screen
+    and (min-width : 1200px) {
+    width: 15%;
+  }
+
+  @media only screen
+    and (min-width : 1600px) {
+    width: 160px;
+  }
+}
