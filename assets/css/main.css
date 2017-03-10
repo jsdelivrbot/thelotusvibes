@@ -466,15 +466,15 @@ body {
 nav {
   align-items: center;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
-  top: 0;
+  padding: 12px 0;
   width: 100%;
   height: auto; }
 
 .nav {
-  display: flex;
   align-items: center;
-  padding: 12px 0;
+  display: flex;
   font-size: 0.722em;
   text-align: center;
   text-transform: uppercase; }
@@ -487,30 +487,23 @@ nav {
     background-color: transparent;
     margin: 0 10px; }
 
-#logo-layout {
-  margin: 0 70px;
-  width: 160px; }
-
-.logo {
+.logo-lotus {
   display: flex;
   margin-right: auto;
   height: auto; }
   @media only screen and (min-width: 320px) {
-    .logo {
+    .logo-lotus {
       display: block;
       justify-content: center;
       margin: 0 auto;
-      width: 160px; } }
+      width: 40px; } }
   @media only screen and (min-width: 768px) {
-    .logo {
+    .logo-lotus {
       display: flex;
-      width: 20%; } }
+      width: 40px; } }
   @media only screen and (min-width: 1200px) {
-    .logo {
-      width: 15%; } }
-  @media only screen and (min-width: 1600px) {
-    .logo {
-      width: 160px; } }
+    .logo-lotus {
+      width: 60px; } }
 
 header {
   align-items: center;
@@ -659,14 +652,6 @@ header {
     .footer {
       margin: 0 670px; } }
 
-.logo-lotus {
-  width: 50px;
-  height: auto;
-  margin-right: 0; }
-  @media only screen and (min-width: 1024px) {
-    .logo-lotus {
-      margin-right: 100px; } }
-
 .copyright {
   align-items: center;
   color: #d3d3d3;
@@ -675,12 +660,11 @@ header {
   text-align: center; }
   @media only screen and (min-width: 320px) {
     .copyright {
-      visibility: hidden; } }
+      padding: 2em 0; } }
   @media only screen and (min-width: 768px) {
     .copyright {
       justify-content: flex-end;
-      padding: 0;
-      visibility: visible; } }
+      padding: 0; } }
   @media only screen and (min-width: 2304px) {
     .copyright {
       font-size: 1em; } }

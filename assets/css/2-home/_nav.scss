@@ -1,16 +1,16 @@
 nav {
   align-items: center;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
-  top: 0;
+  padding: 12px 0;
   width: 100%;
   height: auto;
 }
 
 .nav {
-  display: flex;
   align-items: center;
-  padding: 12px 0;
+  display: flex;
   font-size: 0.722em; // 13px
   text-align: center;
   text-transform: uppercase;
@@ -28,12 +28,7 @@ nav {
   }
 }
 
-#logo-layout {
-  margin: 0 70px;
-  width: 160px;
-}
-
-.logo {
+.logo-lotus {
   display: flex;
   margin-right: auto;
   height: auto;
@@ -43,22 +38,17 @@ nav {
     display: block;
     justify-content: center;
     margin: 0 auto;
-    width: 160px;
+    width: 40px;
   }
 
   @media only screen
     and (min-width : 768px) {
     display: flex;
-    width: 20%;
+    width: 40px;
   }
 
   @media only screen
     and (min-width : 1200px) {
-    width: 15%;
-  }
-
-  @media only screen
-    and (min-width : 1600px) {
-    width: 160px;
+    width: 60px;
   }
 }
