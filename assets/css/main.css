@@ -463,48 +463,99 @@ body {
   transition: all .3s;
   z-index: -1; }
 
-nav {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 12px 0;
-  width: 100%;
-  height: auto; }
+#nav-container > nav > ul {
+  list-style-type: none; }
 
-.nav {
-  align-items: center;
+/* NAVIGATION */
+#nav-background {
   display: flex;
+  top: 0;
+  z-index: 9000;
+  width: 100%;
+  background-color: white; }
+
+#nav-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto; }
+
+#nav-header {
+  display: flex;
+  align-items: center; }
+  @media only screen and (min-width: 320px) {
+    #nav-header {
+      margin: 1% 5%;
+      justify-content: space-between; } }
+  @media only screen and (min-width: 768px) {
+    #nav-header {
+      justify-content: center; } }
+
+.nav-ul {
+  display: flex;
+  max-width: 700px; }
+
+.nav-ul > li {
+  display: flex; }
+
+.nav-link {
+  flex: 1;
+  color: #d4a26a;
+  font-weight: 700;
+  text-decoration: none;
   font-size: 0.722em;
   text-align: center;
-  text-transform: uppercase; }
-  .nav a {
-    color: #d4a26a;
-    font-weight: 700;
-    width: auto; }
-  .nav li {
+  text-transform: uppercase;
+  transition: 200ms; }
+
+.nav-link:hover {
+  background-color: #f1f1f1; }
+
+.active-link {
+  background-color: #f1f1f1; }
+
+/* LOGO */
+@media screen and (min-width: 320px) {
+  #nav-logo {
+    width: 60px;
+    height: auto; } }
+
+@media screen and (min-width: 320px) and (min-width: 768px) {
+  #nav-logo {
     width: 100px;
-    background-color: transparent;
-    margin: 0 10px; }
+    height: auto; } }
 
-.logo-lotus {
-  display: flex;
-  margin-right: auto;
-  height: auto; }
-  @media only screen and (min-width: 320px) {
-    .logo-lotus {
-      display: block;
-      justify-content: center;
-      margin: 0 auto;
-      width: 40px; } }
-  @media only screen and (min-width: 768px) {
-    .logo-lotus {
-      display: flex;
-      width: 40px; } }
-  @media only screen and (min-width: 1200px) {
-    .logo-lotus {
-      width: 60px; } }
+/* END NAVIGATION */
+/* MOBILE MENU */
+@media screen and (max-width: 767px) {
+  #nav-container {
+    flex-direction: column;
+    text-align: center;
+    width: 100%; }
+  #nav-menu-button {
+    padding: 1rem;
+    background-color: #f1f1f1;
+    cursor: pointer; }
+  .nav-ul {
+    flex-direction: column;
+    overflow-y: scroll;
+    direction: rtl;
+    max-height: 80vh; }
+  .hide-ul {
+    max-height: 0vh; }
+  .nav-link {
+    padding: 1rem 0;
+    font-size: 0.722em; } }
 
+/* END MOBILE MENU */
+/* DESKTOP MENU */
+@media screen and (min-width: 768px) {
+  #nav-menu-button {
+    display: none; }
+  .nav-link {
+    padding: 1rem 1.5rem; } }
+
+/* END DESKTOP MENU */
 header {
   align-items: center;
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.3);
