@@ -5,4 +5,24 @@ permalink: /about/
 ---
 
 {% include nav.html %}
+
+<div class="about">
+  <h1 class="header-text">Our mission is to provide a unique visual perspective in exploring all aspects of Buddhism.</h1>
+
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <div>
+      <div class="social-row">
+        <div class="fb-like" data-href="https://facebook.com/thelotusvibes" data-width="200px" data-layout="button" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
+      </div>
+  </div>
+</div>
+
 {% include footer.html %}

@@ -31,6 +31,7 @@
     @media only screen
       and (min-width : 768px) {
       justify-content: center;
+      margin: 5%;
     }
   }
 
@@ -45,7 +46,7 @@
 
 .nav-link {
   flex: 1;
-  color: $cta;
+  color: $body-primary;
   font-weight: 700;
   text-decoration: none;
   font-size: 0.722em; // 13px
@@ -54,13 +55,7 @@
   transition: 200ms;
 }
 
-.nav-link:hover {
-  background-color: #f1f1f1;
-}
 
-.active-link {
-  background-color: #f1f1f1;
-}
 
 /* LOGO */
 @media screen and (min-width: 320px) {

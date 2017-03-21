@@ -2,10 +2,10 @@
 
 h1 {
   color: $body-primary;
-  font-size: 1.6666666666666667em; // 30px
+  font-size: 2.5em; // 45px
   font-weight: 700;
   margin: 0;
-  padding: 0;
+  padding: 25px 0 0;
   text-decoration: none;
 }
 
@@ -13,6 +13,17 @@ h2 {
   color: $body-primary;
   font-size: 2em; // 36px
   font-weight: 300;
+  letter-spacing: 0.4px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-transform: none;
+}
+
+h3 {
+  color: $body-primary;
+  font-size: 1.667em; // 30px
+  font-weight: 700;
   letter-spacing: 0.4px;
   margin: 0;
   padding: 0 0 10px;
@@ -29,6 +40,15 @@ p {
   padding: 0;
   text-decoration: none;
 }
+
+a {
+  color: $accent;
+}
+
+a:hover {
+  color: $cta;
+}
+
 
 ul, li {
   text-decoration: none;
@@ -54,7 +74,7 @@ body {
 body {
   color: $body-primary;
   font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
+  font-size: 18px; // $base-font-size
   line-height: 1.6;
   min-width: 100vw;
   text-decoration: none;
@@ -65,24 +85,22 @@ body {
 
 .light-display-accent {
   color: $accent;
+  font-weight: 300;
   text-align: center;
 
   @media only screen
     and (min-width : 320px) {
     font-size: 1em;
-    padding: 30px 0 0;
   }
 
   @media only screen
     and (min-width : 768px) {
     font-size: 2em; // 36px
-    padding: 50px 0 0;
   }
 
   @media only screen
     and (min-width : 2304px) {
     font-size: 2.222em; // 40px
-    padding: 100px 0 0;
   }
 }
 

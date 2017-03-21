@@ -1,85 +1,103 @@
- header {
-  align-items: center;
-  box-shadow: 0 1px 5px 0 $shadow-bottom;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.main-description { //spacing layout
+  width: 100%;
+  background-color: $section-light;
 
   @media only screen
     and (min-width : 320px) {
+    padding: 0 8%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
+    font-size: 0.5em; // h1 22px
   }
 
   @media only screen
     and (min-width : 768px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-}
-
-.section-light {
-  width: 100%;
-  background-color: $section-light;
-}
-
-#gradient {
-  width: 100%;
-  position: relative;
-  background: linear-gradient(270deg, #003366, #b27000, #06617d, #067370);
-  background-size: 800% 800%;
-  -webkit-animation: colors 30s ease infinite;
-  -moz-animation: colors 30s ease infinite;
-  animation: colors 30s ease infinite;
-}
-
-@-webkit-keyframes colors {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-@-moz-keyframes colors {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-@keyframes colors {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-
-.main-description { //spacing layout
-
-  @media only screen
-    and (min-width : 320px) {
-    padding: 6% 8%;
-  }
-
-  @media only screen
-    and (min-width : 768px) {
-    padding: 4% 10% 8%;
+    padding: 2% 13% 0;
+    font-size: 0.8em; // h1 36px
   }
 
   @media only screen
     and (min-width : 1024px) {
-    padding: 3% 20% 5%;
+    padding: 2% 12% 0;
   }
 
   @media only screen
     and (min-width : 1200px) {
-    padding: 3% 25% 5%;
+    padding: 2% 15% 1%;
+    font-size: 1em; // h1 45px
   }
 
   @media only screen
     and (min-width : 1600px) {
-    padding: 3% 30%;
+    padding: 3% 20% 2%;
   }
 
   @media only screen
     and (min-width : 2304px) {
-    padding: 3% 25%;
+    padding: 1% 25% 2%;
+  }
+}
+
+.header-text-large {
+  color: $neutral-color;
+}
+
+.main-share {
+  @media only screen
+    and (min-width : 320px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 0;
+  }
+
+  @media only screen
+    and (min-width : 768px) {
+    padding: 60px 0;
+  }
+}
+
+.follow {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  @media only screen
+    and (min-width : 320px) {
+    margin: 0 20px 0 0;
+  }
+
+  @media only screen
+    and (min-width : 768px) {
+    margin: 0 40px 0 0;
+  }
+}
+
+.pray-emoji {
+  width: 2em;
+  height: auto;
+  margin: 0 20px 0 0;
+}
+
+.header-social {
+  @media only screen
+    and (min-width : 320px) {
+    height: 46px;
+    display: flex;
+    align-items: center;
+  }
+
+  @media only screen
+    and (min-width : 768px) {
+    padding-bottom: 8px;
+  }
+
+  @media only screen
+    and (min-width : 1200px) {
+    padding-bottom: 15px;
   }
 }
