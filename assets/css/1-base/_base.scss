@@ -46,7 +46,7 @@ a {
 }
 
 a:hover {
-  color: $cta;
+  color: $hover-light;
 }
 
 
@@ -83,8 +83,8 @@ body {
 
 // Specific Typography
 
-.light-display-accent {
-  color: $accent;
+.light-display-accent2 {
+  color: $accent2;
   font-weight: 300;
   text-align: center;
 

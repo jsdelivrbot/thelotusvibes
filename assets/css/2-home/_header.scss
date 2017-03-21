@@ -1,6 +1,13 @@
 .main-description { //spacing layout
   width: 100%;
-  background-color: $section-light;
+  background: #4CA1AF; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #4CA1AF , #C4E0E5); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #4CA1AF , #C4E0E5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+//  background-image: url("/assets/img/geometry_@2X.png");
+
+  h1 {
+    color: #fff;
+  }
 
   @media only screen
     and (min-width : 320px) {
@@ -40,11 +47,14 @@
   }
 }
 
-.header-text-large {
-  color: $neutral-color;
-}
-
 .main-share {
+  a {
+    color: $accent2;
+  }
+  a:hover {
+    color: $hover-dark;
+  }
+
   @media only screen
     and (min-width : 320px) {
     display: flex;
