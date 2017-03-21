@@ -1,0 +1,41 @@
+.contact-links {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+
+  @media only screen
+    and (min-width : 320px) {
+    padding: 3% 0 7%;
+
+    a{
+      font-size: 0.5em;
+    }
+
+    h1 {
+      padding: 0;
+    }
+  }
+
+  @media only screen
+    and (min-width : 768px) {
+    padding: 3% 0 7%;
+
+    a {
+      font-size: 1em;
+    }
+
+    h1 {
+      padding: 25px 0 0;
+    }
+  }
+
+  a {
+    color: $accent2;
+    font-weight: 700;
+  }
+
+  a:hover {
+    color: $hover-dark;
+  }
+}
