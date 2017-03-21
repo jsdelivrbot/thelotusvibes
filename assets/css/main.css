@@ -513,6 +513,14 @@ body {
 .nav-ul > li {
   display: flex; }
 
+@media only screen and (min-width: 320px) {
+  a.nav-link:hover {
+    background-color: #C4E0E5; } }
+
+@media only screen and (min-width: 768px) {
+  a.nav-link:hover {
+    background-color: transparent; } }
+
 .nav-link {
   flex: 1;
   color: #d4a26a;
