@@ -139,6 +139,55 @@ body {
   }
 }
 
+.flex-header-light {
+  width: 100%;
+
+  a {
+    color: $hover-light;
+    font-weight: 400;
+  }
+
+  h1 {
+    color: $body-primary;
+  }
+
+  @media only screen
+    and (min-width : 320px) {
+    padding: 0 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 0.5em; // h1 22px
+  }
+
+  @media only screen
+    and (min-width : 768px) {
+    padding: 2% 13% 0;
+    font-size: 0.8em; // h1 36px
+  }
+
+  @media only screen
+    and (min-width : 1024px) {
+    padding: 2% 12% 0;
+  }
+
+  @media only screen
+    and (min-width : 1200px) {
+    padding: 2% 15% 1%;
+    font-size: 1em; // h1 45px
+  }
+
+  @media only screen
+    and (min-width : 1600px) {
+    padding: 3% 20% 2%;
+  }
+
+  @media only screen
+    and (min-width : 2304px) {
+    padding: 1% 25% 2%;
+  }
+}
 
 // Specific Typography
 

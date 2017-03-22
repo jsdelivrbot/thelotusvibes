@@ -1,41 +1,28 @@
-.contact-links {
+.contact {
   align-items: center;
+  background-color: $bg-neutral;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   height: auto;
+  justify-content: center;
 
   @media only screen
     and (min-width : 320px) {
     padding: 3% 0 7%;
+  }
+}
 
-    a{
-      font-size: 0.5em;
-    }
+.contact-title {
+  padding-bottom: 30px;
+  text-align: center;
 
-    h1 {
-      padding: 0;
-    }
+  @media only screen
+    and (min-width : 320px) {
+    font-size: 0.5em; // h1 22px
   }
 
   @media only screen
     and (min-width : 768px) {
-    padding: 3% 0 7%;
-
-    a {
-      font-size: 1em;
-    }
-
-    h1 {
-      padding: 25px 0 0;
-    }
-  }
-
-  a {
-    color: $accent2;
-    font-weight: 700;
-  }
-
-  a:hover {
-    color: $hover-dark;
+    font-size: 1em;
   }
 }

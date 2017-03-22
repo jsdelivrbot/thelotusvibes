@@ -464,6 +464,39 @@ body {
     .flex-header-dark {
       padding: 1% 25% 2%; } }
 
+.flex-header-light {
+  width: 100%; }
+  .flex-header-light a {
+    color: #13778A;
+    font-weight: 400; }
+  .flex-header-light h1 {
+    color: #5b5b5b; }
+  @media only screen and (min-width: 320px) {
+    .flex-header-light {
+      padding: 0 8%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      font-size: 0.5em; } }
+  @media only screen and (min-width: 768px) {
+    .flex-header-light {
+      padding: 2% 13% 0;
+      font-size: 0.8em; } }
+  @media only screen and (min-width: 1024px) {
+    .flex-header-light {
+      padding: 2% 12% 0; } }
+  @media only screen and (min-width: 1200px) {
+    .flex-header-light {
+      padding: 2% 15% 1%;
+      font-size: 1em; } }
+  @media only screen and (min-width: 1600px) {
+    .flex-header-light {
+      padding: 3% 20% 2%; } }
+  @media only screen and (min-width: 2304px) {
+    .flex-header-light {
+      padding: 1% 25% 2%; } }
+
 .light-display-accent2 {
   color: #13778A;
   font-weight: 300;
@@ -823,30 +856,26 @@ body {
   animation-duration: 0.75s;
   animation-timing-function: ease-out; }
 
-.contact-links {
+.contact {
   align-items: center;
+  background-color: #F9FAFB;
   display: flex;
-  flex-direction: row;
-  height: auto; }
+  flex-direction: column;
+  height: auto;
+  justify-content: center; }
   @media only screen and (min-width: 320px) {
-    .contact-links {
-      padding: 3% 0 7%; }
-      .contact-links a {
-        font-size: 0.5em; }
-      .contact-links h1 {
-        padding: 0; } }
+    .contact {
+      padding: 3% 0 7%; } }
+
+.contact-title {
+  padding-bottom: 30px;
+  text-align: center; }
+  @media only screen and (min-width: 320px) {
+    .contact-title {
+      font-size: 0.5em; } }
   @media only screen and (min-width: 768px) {
-    .contact-links {
-      padding: 3% 0 7%; }
-      .contact-links a {
-        font-size: 1em; }
-      .contact-links h1 {
-        padding: 25px 0 0; } }
-  .contact-links a {
-    color: #13778A;
-    font-weight: 700; }
-  .contact-links a:hover {
-    color: #fff; }
+    .contact-title {
+      font-size: 1em; } }
 
 .blog-layout {
   height: 100%;
