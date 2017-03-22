@@ -81,6 +81,14 @@ body {
   width: 100%;
 }
 
+// Layout
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 // Specific Typography
 
 .light-display-accent2 {
@@ -126,11 +134,17 @@ body {
   }
 }
 
-// Gradients
+// Backgrounds
 
 .gradient-aqua {
   background: #4CA1AF; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #4CA1AF , #C4E0E5); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #4CA1AF , #C4E0E5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  //  background-image: url("/assets/img/geometry_@2X.png");
+}
+
+.geometric-bg {
+//  background-color: $accent2;
+  background-image: url("/assets/img/geometry_@2X.png");
+  background-repeat: repeat;
+  background-blend-mode: multiply;
 }
