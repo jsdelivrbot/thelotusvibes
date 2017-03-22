@@ -8,15 +8,15 @@
 # in the templates via {{ site.myvariable }}.
 title: The Lotus Vibes
 email: hello@thelotusvibes.com
-description: Buddhism art & design
+description: Journey to mindfulness and happiness, inspired by timeless Buddhist wisdom.
 keywords: Buddhism, Buddhist, graphic design, artwork, design, mindfulness, Buddhism art, Buddhism design, positivity, happiness
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://www.thelotusvibes.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: thelotusvibes
 github_username:  adachiu
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+google_analytics: UA-96037581-1
 
 # Build settings
 markdown: kramdown
