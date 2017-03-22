@@ -502,7 +502,7 @@ body {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
 .geometric-bg {
-  background-image: url("{{ site.baseurl }}/assets/img/geometry_@2X.png");
+  background-image: url("../../assets/img/geometry_@2X.png");
   background-repeat: repeat;
   background-blend-mode: multiply; }
 
