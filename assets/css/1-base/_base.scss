@@ -92,12 +92,7 @@ body {
 .flex-header-dark {
   width: 100%;
 
-  h1 {
-    color: $hover-dark;
-    font-weight: 700;
-  }
-
-  a {
+  a, h1 {
     color: $hover-dark;
   }
 
