@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: thelotusvibes.com/sitemap.xml
+Sitemap: https://www.thelotusvibes.com/sitemap.xml
