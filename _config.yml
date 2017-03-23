@@ -12,16 +12,28 @@ description: Journey to mindfulness and happiness, inspired by timeless Buddhist
 keywords: Buddhism, Buddhist, graphic design, artwork, design, mindfulness, Buddhism art, Buddhism design, positivity, happiness
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.thelotusvibes.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: thelotusvibes
-github_username:  adachiu
+twitter:
+  username: thelotusvibes
+facebook:
+  publisher: 1341185725912969
 
+logo: /assets/img/thelotusvibes-logo.svg
+
+social:
+  name: Ada Chiu
+  links:
+    - https://twitter.com/thelotusvibes
+    - https://www.facebook.com/thelotusvibes
+
+author:
+  twitter: adachiume
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: UA-96037581-4
 
 # Build settings
 markdown: kramdown
 gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-seo-tag
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
 exclude:
   - Gemfile
