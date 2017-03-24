@@ -1,6 +1,3 @@
-$(document).ready(function(){
-
-
 var userFeed = new Instafeed({
     get: 'user',
     userId: '4078788353',
@@ -8,8 +5,9 @@ var userFeed = new Instafeed({
     resolution: 'standard_resolution',
     limit: 6,
     template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>',
+    filter: function(image) {
+    return image.tags.indexOf('lotusvibes365') >= 0;
+    }
 });
 
 userFeed.run();
-
-});
