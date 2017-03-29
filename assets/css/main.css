@@ -372,7 +372,7 @@ h2 {
   font-weight: 300;
   letter-spacing: 0.4px;
   margin: 0;
-  padding: 0;
+  padding: 0 0 10px;
   text-decoration: none;
   text-transform: none; }
 
@@ -391,6 +391,7 @@ p {
   font-size: 1em;
   font-style: normal;
   font-weight: 400;
+  line-height: 30px;
   margin: 0;
   padding: 0;
   text-decoration: none; }
@@ -445,7 +446,7 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
-      font-size: 0.5em; } }
+      font-size: 0.65em; } }
   @media only screen and (min-width: 768px) {
     .flex-header-dark {
       padding: 2% 13% 0;
@@ -455,14 +456,14 @@ body {
       padding: 2% 12% 0; } }
   @media only screen and (min-width: 1200px) {
     .flex-header-dark {
-      padding: 2% 15% 1%;
+      padding: 4% 15% 1%;
       font-size: 1em; } }
   @media only screen and (min-width: 1600px) {
     .flex-header-dark {
-      padding: 3% 20% 2%; } }
+      padding: 5% 20% 2%; } }
   @media only screen and (min-width: 2304px) {
     .flex-header-dark {
-      padding: 1% 25% 2%; } }
+      padding: 4% 25% 1%; } }
 
 .flex-header-light {
   width: 100%; }
@@ -478,7 +479,7 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
-      font-size: 0.5em; } }
+      font-size: 0.65em; } }
   @media only screen and (min-width: 768px) {
     .flex-header-light {
       padding: 2% 13% 0;
@@ -488,13 +489,40 @@ body {
       padding: 2% 12% 0; } }
   @media only screen and (min-width: 1200px) {
     .flex-header-light {
-      padding: 2% 15% 1%;
+      padding: 4% 15% 1%;
       font-size: 1em; } }
   @media only screen and (min-width: 1600px) {
     .flex-header-light {
-      padding: 3% 20% 2%; } }
+      padding: 5% 20% 2%; } }
   @media only screen and (min-width: 2304px) {
     .flex-header-light {
+      padding: 4% 25% 1%; } }
+
+.flex-content {
+  width: 100%; }
+  .flex-content p {
+    font-size: 1em; }
+  @media only screen and (min-width: 320px) {
+    .flex-content {
+      padding: 5% 8%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start; } }
+  @media only screen and (min-width: 768px) {
+    .flex-content {
+      padding: 2% 13% 0; } }
+  @media only screen and (min-width: 1024px) {
+    .flex-content {
+      padding: 2% 12% 0; } }
+  @media only screen and (min-width: 1200px) {
+    .flex-content {
+      padding: 2% 15% 1%; } }
+  @media only screen and (min-width: 1600px) {
+    .flex-content {
+      padding: 1% 20% 2%; } }
+  @media only screen and (min-width: 2304px) {
+    .flex-content {
       padding: 1% 25% 2%; } }
 
 .light-display-accent2 {
@@ -855,6 +883,14 @@ body {
   animation-name: hvr-icon-up;
   animation-duration: 0.75s;
   animation-timing-function: ease-out; }
+
+.about {
+  background-color: #F9FAFB; }
+  .about h3 a {
+    font-weight: 700; }
+
+.group-text {
+  padding: 30px 0; }
 
 .contact {
   align-items: center;
