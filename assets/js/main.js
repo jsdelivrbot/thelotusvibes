@@ -1,3 +1,5 @@
+// INSTAFEED
+
 var userFeed = new Instafeed({
     get: 'user',
     userId: '4078788353',
