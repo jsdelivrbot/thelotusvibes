@@ -6,6 +6,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+meta_robots: "index, follow"
 title: The Lotus Vibes
 email: hello@thelotusvibes.com
 description: Journey to mindfulness and happiness, inspired by timeless Buddhist wisdom.
